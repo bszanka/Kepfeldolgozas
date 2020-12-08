@@ -54,8 +54,9 @@ int main()
 			cout << (int)i << " edik kontur merete " << contourArea(Mat(contours[i])) << endl;
 			// #3 Mentse el a kapott képeket sorszámozottan.
 			babu = src_gray_resize & drawing;
-			std::string fname = std::to_string(i);
-			fname.append("babu.png");
+			std::string fname = "babu";
+			fname.append(std::to_string(i));
+			fname.append(".png");
 			cout << fname << endl;
 			try
 			{
